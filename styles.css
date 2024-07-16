@@ -111,7 +111,6 @@ body{
     flex: 1;
     margin: 20px;
 }
-
 .greetuser{
     grid-column: 2;
 }
@@ -129,4 +128,66 @@ body{
 .greetuser{
     font-weight: bold;
     font-size: 25px;
+}
+
+.content{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 1fr;
+}
+.yourprojects{
+    display: grid;
+}
+.announcementstrending{
+    background-color: rgb(181, 212, 149);
+}
+
+.projectgrid{
+    display: grid;
+    place-self: center;
+    place-items: center;
+    height: 90%;
+    width: 90%;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.card{
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    border-left: 10px solid rgb(255, 196, 0);
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    box-shadow: 1px 1px 3px rgb(172, 172, 172);
+}
+.card .title{
+    font-weight: bold;
+}
+.cardbuttons{
+    justify-self: end;
+}
+.desc{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.yourprojects > p{
+    margin-top: 45px;
+    margin-left: 65px;
+    font-size: 24px;
+}
+.announcementstrending > p{
+    margin-top: 45px;
+    font-size: 24px;
+}
+
+.sidegrid{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    background-color: yellow;
 }
